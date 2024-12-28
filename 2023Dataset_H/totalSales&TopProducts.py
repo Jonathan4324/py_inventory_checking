@@ -1,5 +1,5 @@
 import pandas as pd
-
+import json
 # Load the new dataset
 all_data = pd.read_csv("2023Dataset_H/2023_sales_data.csv")
 
@@ -70,3 +70,17 @@ least_sales_amount = least_sales_amount.sort_values(by='Sales', ascending=True).
 least_sales_amount.index += 1  # Make the index start from 1
 print("\nTop 10 Products with Least Total Sales:")
 print(least_sales_amount)
+
+
+#Testing Json structure for total sales for monthly, daily and one year
+
+# Create the JSON structure for total monthly sales
+# total_monthly_sales_json = {
+#     "TotalMonthlySales": monthly_sales.to_dict(orient="records")  # Convert DataFrame to list of dictionaries
+# }
+
+# # Save the JSON structure to a file
+# with open("total_monthly_sales.json", "w") as json_file:
+#     json.dump(total_monthly_sales_json, json_file, indent=4)
+
+# print("\nJSON file created successfully. Check the file 'total_monthly_sales.json'.")

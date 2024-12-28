@@ -37,7 +37,7 @@ for festival, (start_date, end_date) in festivals.items():
         'Top 10 Most Sold Products': top_10_most_sold,
         'Top 10 Least Sold Products': top_10_least_sold,
     }
-
+    
 # Step 3: Display the results
 for festival, results in festival_results.items():
     print(f"\n{festival} Festival:")
